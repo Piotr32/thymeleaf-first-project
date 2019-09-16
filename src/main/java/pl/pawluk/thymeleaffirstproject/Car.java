@@ -10,12 +10,7 @@ public class Car {
         this.model = model;
     }
 
-    public String getMark() {
-        return mark;
-    }
-
-    public void setMark(String mark) {
-        this.mark = mark;
+    public Car() {
     }
 
     public String getModel() {
@@ -24,5 +19,21 @@ public class Car {
 
     public void setModel(String model) {
         this.model = model;
+    }
+
+    public String getMark() {
+        return mark;
+    }
+
+    public void setMark(String mark) {
+        this.mark = mark;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "mark='" + mark + '\'' +
+                ", model='" + model + '\'' +
+                '}';
     }
 }
